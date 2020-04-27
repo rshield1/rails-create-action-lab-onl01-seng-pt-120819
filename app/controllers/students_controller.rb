@@ -12,10 +12,10 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @post = Post.new
-    @post.first_name = @post[:first_name]
-    @post.last_name = @post[:last_name]
-    @post.save
+    @student = Student.new
+    @student.first_name = params[:first_name]
+    @student.last_name = params[:last_name]
+    @student.save
   end
 
 end
