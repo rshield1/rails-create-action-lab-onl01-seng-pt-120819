@@ -13,7 +13,9 @@ class StudentsController < ApplicationController
 
   def create
     @post = Post.new
-    @post
+    @post.first_name = @post[:first_name]
+    @post.last_name = @post[:last_name]
+    @post.save
   end
 
 end
