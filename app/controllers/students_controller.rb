@@ -12,6 +12,8 @@ class StudentsController < ApplicationController
   end
 
   def create
+    @post = Post.new
+    @post
   end
 
 end
